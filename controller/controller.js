@@ -1,13 +1,8 @@
 const mongoose = require('mongoose');
-const User = require('user');
+const MongooseModel = require('../models/MongooseModels');
 
 module.exports = {
+  async todo(req, res, next) {},
 
-  async _todo(req, res, next) {
-
-  }
-
-  async _toAdd(req, res, next) {
-
-  }
-}
+  async _toAdd(req, res, next) {}
+};

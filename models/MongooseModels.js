@@ -3,14 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const todoSchema = new Schema({
-  email: 'todo',
-  password: 'todo'
+  email: String,
+  password: String
 });
 
 todoSchema.pre('save', async function(next) {
   // todo
 });
 
-const MongooseClass = mongoose.model('mongoose' todoSchema);
+const MongooseClass = mongoose.model('todo', todoSchema);
 
 module.exports = MongooseClass;
